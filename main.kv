@@ -1,0 +1,26 @@
+#:include kv/homescreen.kv
+
+GridLayout:
+    cols: 1
+    FloatLayout:
+        ScreenManager:
+            size_hint: 1, .9
+            pos_hint: {"top": 1, "left": 1}
+            id: screen_manager
+            HomeScreen:
+                name: "home_screen"
+                id: home_screen
+
+        Widget:
+            size_hint: 1, .1
+            pos_hint: {"bottom": .1, "right": 1}
+            canvas:
+                Color:
+                    rgb: utils.get_color_from_hex("#32a852")
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            MDFloatingActionButtonSpeedDial:
+                data: {'facebook': 'pritam.pan@facebook.com', 'linkedin': 'pritam.pan'}
+                hint_animation: True
+                rotation_root_button: True
