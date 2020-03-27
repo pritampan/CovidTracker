@@ -4,7 +4,7 @@
 title = COVID-19 Tracker
 
 # (str) Package name
-package.name = covid-tracker
+package.name = covidtracker
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = com.pan.pritam
@@ -75,7 +75,7 @@ osx.kivy_version = 1.9.1
 #
 
 # (bool) Indicate if the application should be fullscreen or not
-fullscreen = 0
+fullscreen = 1
 
 # (string) Presplash background color (for new android toolchain)
 # Supported formats are: #RRGGBB #AARRGGBB or one of the following names:
@@ -85,7 +85,7 @@ fullscreen = 0
 #android.presplash_color = #FFFFFF
 
 # (list) Permissions
-#android.permissions = INTERNET
+android.permissions = INTERNET
 
 # (int) Target Android API, should be as high as possible.
 #android.api = 27
@@ -219,7 +219,7 @@ fullscreen = 0
 #android.copy_libs = 1
 
 # (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
-android.arch = armeabi-v7a
+android.arch = x86_64
 
 #
 # Python for android (p4a) specific
