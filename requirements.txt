@@ -12,7 +12,7 @@ Kivy==1.11.1
 Kivy-Garden==0.1.4
 kivymd==0.104.0
 pexpect==4.8.0
-Pillow==8.1.1
+Pillow==9.0.0
 ptyprocess==0.6.0
 Pygments==2.6.1
 requests==2.23.0
